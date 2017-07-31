@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  post '/get_name', to: 'static_pages#get_name', as: 'get_name'
+  root 'static_pages#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
