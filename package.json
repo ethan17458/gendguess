@@ -1,0 +1,29 @@
+{
+  "name": "gendguess",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "browserify-incremental": "^3.1.1"
+  },
+  "devDependencies": {
+    "browserify-incremental": "^3.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethan17458/gendguess.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethan17458/gendguess/issues"
+  },
+  "homepage": "https://github.com/ethan17458/gendguess#readme"
+}
