@@ -12,6 +12,15 @@ class StaticPagesController < ApplicationController
 		redirect_to root_path
 		return
 	end
-	redirect_to root_path(prediction: @prediction, probability: @probability)
+	if @prediction == "male"
+		respond_to do |format|
+			format.js {render "show_male"}
+		end
+	elsif @prediction == "female"
+		respond_to do |format|
+			format.js {render "show_female"}
+		end
+	end
+	# redirect_to root_path(prediction: @prediction, probability: @probability)
 	end
 end

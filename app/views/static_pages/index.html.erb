@@ -4,16 +4,12 @@
 			<div class="container-fluid">
 				<h1 style="font-size: 500%;">What's your name?</h1>
 				<br>
-				<%= form_tag get_name_path, method: "post" do %>
+				<%= form_tag get_name_path, method: "post", remote: true do %>
 					<div class="form-group">
 						<%= text_field_tag :name, nil, class: "form-control" %>
 					</div>
 				<% end %>
-				<% if params[:prediction] && params[:prediction] == "male" %>
-					<%= render 'male' %>
-				<% elsif params[:prediction] == "female" %>
-					<%= render 'female' %>
-				<% end %>
+				<div id="gender-icon"></div>
 			</div>
 		</div>
 	</div>
