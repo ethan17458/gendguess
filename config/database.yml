@@ -16,6 +16,7 @@ default: &default
   username: root
   password:
   socket: /tmp/mysql.sock
+  host: 127.0.0.1
 
 development:
   <<: *default
@@ -49,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: gendguess_production
+  database: <%= ENV['DATABASE_URL'] %>
   username: gendguess
   password: <%= ENV['GENDGUESS_DATABASE_PASSWORD'] %>
