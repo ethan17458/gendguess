@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'gendered'
 gem 'font-awesome-rails'
-
+gem 'browserify-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,7 +44,7 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-	gem 'browserify-rails'
+	
 end
 
 group :development do
