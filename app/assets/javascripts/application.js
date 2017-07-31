@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+//= require turbolinks
+
 
 var colors = new Array(
   [62,35,255],
