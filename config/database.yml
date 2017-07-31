@@ -49,7 +49,6 @@ test:
 #
 production:
   adapter: postgres
-  <<: *default
   database: gendguess_production
   username: gendguess
   password: <%= ENV['GENDGUESS_DATABASE_PASSWORD'] %>
