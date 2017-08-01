@@ -8,6 +8,7 @@
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= analytics_init if GoogleAnalytics.valid_tracker? %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= csrf_meta_tags %>
 </head>

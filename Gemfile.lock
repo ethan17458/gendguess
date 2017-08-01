@@ -67,6 +67,7 @@ GEM
       http (>= 0.6.2)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    google-analytics-rails (1.1.0)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -188,6 +189,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   font-awesome-rails
   gendered
+  google-analytics-rails
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
